@@ -1,0 +1,17 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GUI_Maker_ECManagement.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CellFormat" Type="System.Windows.Forms.TableLayoutPanelCellBorderStyle" Scope="Application">
+      <Value Profile="(Default)">Inset</Value>
+    </Setting>
+    <Setting Name="ecdataConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=117.4.184.95;Initial Catalog=ecdata;Persist Security Info=True;User ID=ta_golf;Password=Ff211206hNcD__uhHHoi32RreThks3021&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=117.4.184.95;Initial Catalog=ecdata;Persist Security Info=True;User ID=ta_golf;Password=Ff211206hNcD__uhHHoi32RreThks3021</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
