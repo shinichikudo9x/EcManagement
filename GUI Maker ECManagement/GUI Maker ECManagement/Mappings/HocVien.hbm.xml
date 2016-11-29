@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
-                   assembly="GUI Maker ECManagement" 
+                   assembly="GUI_Maker_ECManagement.Entity" 
                    namespace="GUI_Maker_ECManagement.Entity">
-  <class name="HocVien">
-    <property name="Id" />
+  <class name="GUI_Maker_ECManagement.Entity.HocVien, GUI_Maker_ECManagement.Entity.HocVien" table="HocVien">
+    <id name="Id" column="ID" type="int">
+      <generator class="native"></generator>
+    </id>
     <property name="MaHS" />
     <property name="HoTen" />
     <property name="GioiTinh" />

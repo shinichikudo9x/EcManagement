@@ -1,9 +1,11 @@
-﻿using System;
+﻿using NHibernate;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,9 +21,18 @@ namespace GUI_Maker_ECManagement
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'ecdataDataSet1.HocSinh' table. You can move, or remove it, as needed.
-            // TODO: This line of code loads data into the 'ecdataDataSet.HocSinh' table. You can move, or remove it, as needed.
-            panel1.AutoSize = true;
+            this.Text = Help.Help.EcManagementForm;
+            System.Collections.IList siteList;
+            ISessionFactory factory =
+            new NHibernate.Cfg.Configuration().Configure().BuildSessionFactory();
+
+            using (ISession session = factory.OpenSession())
+            {
+                ICriteria sc = session.CreateCriteria(typeof(Site));
+                siteList = sc.List();
+                session.Close();
+            }
+            factory.Close();
         }
     }
 }
