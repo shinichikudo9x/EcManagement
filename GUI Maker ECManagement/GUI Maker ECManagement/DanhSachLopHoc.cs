@@ -16,11 +16,5 @@ namespace GUI_Maker_ECManagement
         {
             InitializeComponent();
         }
-
-      
-
-      
-
-       
     }
 }
