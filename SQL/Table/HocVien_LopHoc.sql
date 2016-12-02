@@ -1,7 +1,7 @@
 use ecdata;
 drop table if exists Hocvien_LopHoc;
 
-CREATE TABLE IF NOT EXISTS Hocvien_LopHoc (
+CREATE TABLE IF NOT EXISTS Hocvien_LopHoc(
 	ID INT(10) NOT NULL,
 	SoPhieu NVARCHAR(20) NOT NULL,
 	IDHocsinh INT(10) NOT NULL,

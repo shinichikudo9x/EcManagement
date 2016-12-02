@@ -17,5 +17,6 @@ CREATE TABLE IF NOT EXISTS HocSinh (
 	TenTiengAnh NVARCHAR(50) NULL DEFAULT NULL,
 	NgayLienHe DATETIME(3) NULL DEFAULT NULL,
 	PRIMARY KEY (ID,MaHs),
-    foreign key(InputUserId) references User(Id)
+    foreign key(InputUserId) references User(Id),
+	UNIQUE(MaHS)
 );

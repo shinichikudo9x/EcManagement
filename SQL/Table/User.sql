@@ -9,5 +9,6 @@ create table if not exists User(
     RoleId int(10) not null,
     CreateTime datetime(3),
     primary key(id,UserName),
-    foreign key(RoleId) references Role(Id)
+    foreign key(RoleId) references Role(Id),
+	UNIQUE(UserName)
 );
